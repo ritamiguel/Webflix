@@ -46,5 +46,24 @@ public class UserEJB implements UserEJBRemote {
         return "Error creating a new user!";
     }
 
+    // get user with email and password
+    public User recognizeUser(String email, String password)
+    {
+    	
+        try{
+            Query newQuery = em.createQuery(" FROM User user where user.email=?1");
+            newQuery.setParameter(1, email);
+            User userToAuth = (User) newQuery.getSingleResult();
+            if(userToAuth != null)
+                return userToAuth;
+            
+        }catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+        return null;
+
+    }
+
 
 }

@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Built-By: sofiaoliveira
-Class-Path: project2-code-business-0.0.1-SNAPSHOT.jar jaxb-api-2.3.0.j
- ar jaxb-core-2.3.0.1.jar jaxb-impl-2.3.0.1.jar activation-1.1.1.jar p
- roject2-code-data-0.0.1-SNAPSHOT.jar
-Build-Jdk: 1.8.0_101
-Created-By: Maven Integration for Eclipse
-
